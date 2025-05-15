@@ -18,8 +18,8 @@ const Hero: React.FC = () => {
             Bienvenue à La Détente Angevine
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl mx-auto">
-            Un lieu chaleureux pour savourer des moments uniques entre amis ou
-            en famille.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique
+            animi dicta. Vero, enim obcaecati.
           </p>
         </div>
       </div>
