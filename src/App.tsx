@@ -1,13 +1,15 @@
+import React from "react";
+import NavBar from "./components/navBar";
+import Hero from "./components/hero";
 
 function App() {
-
-return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-100 to-pink-200 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-pink-700">
-        ✅ Tailwind fonctionne !
-      </h1>
-    </div>
+  return (
+    <>
+      <NavBar />
+      <Hero />
+      <div className="h-[2000px]"></div>
+    </>
   );
 }
 
-export default App
+export default App;
