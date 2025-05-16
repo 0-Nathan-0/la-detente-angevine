@@ -10,7 +10,6 @@ const Home: React.FC = () => {
       <Hero />
       <BarFeatures />
       <Footer />
-      
     </>
   );
 };

@@ -2,8 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section
-    >
+    <section>
       <img
         id="photoDeCouverture"
         src="https://media.istockphoto.com/id/649668978/fr/photo/boissons-et-la-nourriture-de-pub.jpg?s=612x612&w=0&k=20&c=01sdZ7GBbePyYgbkrCoL_TpZVM75erRCGFyw8cwvqqA="
