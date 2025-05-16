@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import NavItems from "./navItems";
 
 const Navbar: React.FC = () => {
   const [showBg, setShowBg] = useState(false);
@@ -22,82 +23,32 @@ const Navbar: React.FC = () => {
         showBg ? "bg-black" : "bg-transparent"
       } animation duration-400`}
     >
-      <div className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold text-center">
+      <div className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold whitespace-nowrap z-50">
         La Détente Angevine
       </div>
 
-      <ul className="hidden md:flex space-x-6">
-        <li>
-          <a href="#accueil" className="nav-link">
-            Accueil
-          </a>
-        </li>
-        <li>
-          <a href="#menu" className="nav-link">
-            Menu
-          </a>
-        </li>
-      </ul>
+      <NavItems isMobile={false} />
 
-      <ul className="hidden md:flex space-x-6">
-        <li>
-          <a href="#reservation" className="nav-link">
-            Réservation
-          </a>
-        </li>
-        <li>
-          <a href="#aPropos" className="nav-link">
-            À Propos
-          </a>
-        </li>
-      </ul>
-
+      {/* Version mobile */}
       <button
-        className="md:hidden z-50 text-white ml-auto duration-200 hover:scale-110 cursor-pointer"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="md:hidden ml-auto relative w-8 h-8 z-50 flex flex-col justify-center cursor-pointer"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
-        </svg>
+        <span
+          className={`hamburger 
+      ${isMenuOpen ? "rotate-45 top-3.5" : "top-2"}`}
+        />
+        <span
+          className={`hamburger
+      ${isMenuOpen ? "opacity-0" : "top-4"}`}
+        />
+        <span
+          className={`hamburger
+      ${isMenuOpen ? "-rotate-45 top-3.5" : "top-6"}`}
+        />
       </button>
 
-      {isMenuOpen && (
-        <ul
-          className="fixed top-0 py-15 right-0 h-full w-1/4 bg-black text-white p-6 items-end md:hidden z-40 animate-slide-in"
-        >
-          <li>
-            <a href="#accueil" className="nav-link">
-              Accueil
-            </a>
-          </li>
-          <li>
-            <a href="#menu" className="nav-link">
-              Menu
-            </a>
-          </li>
-          <li>
-            <a href="#reservation" className="nav-link">
-              Réservation
-            </a>
-          </li>
-          <li>
-            <a href="#aPropos" className="nav-link">
-              À Propos
-            </a>
-          </li>
-        </ul>
-      )}
+      {isMenuOpen && <NavItems isMobile={true} />}
     </div>
   );
 };

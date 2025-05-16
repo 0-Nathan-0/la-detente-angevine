@@ -1,16 +1,16 @@
-import NavBar from "./components/navBar";
-import Hero from "./components/hero";
-import BarFeatures from "./components/barFeatures";
-import Footer from "./components/footer";
+// src/App.tsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Menu from "./Pages/Menu";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Hero />
-      <BarFeatures />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+      </Routes>
+    </Router>
   );
 }
 

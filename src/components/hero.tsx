@@ -5,6 +5,7 @@ const Hero: React.FC = () => {
     <section
     >
       <img
+        id="photoDeCouverture"
         src="https://plus.unsplash.com/premium_photo-1670984940156-c7f833fe8397?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFyfGVufDB8fDB8fHww"
         alt="Bar"
         className="w-full h-screen object-cover"

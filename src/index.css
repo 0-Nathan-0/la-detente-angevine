@@ -4,6 +4,10 @@
     @apply inline-block duration-200 hover:scale-110 px-4 py-2 md:px-0
 }
 
+.hamburger {
+  @apply absolute h-0.5 w-6 bg-white transform transition duration-400 ease-in-out
+}
+
 @keyframes slide-in {
   from { transform: translateX(100%); }
   to   { transform: translateX(0%); }
