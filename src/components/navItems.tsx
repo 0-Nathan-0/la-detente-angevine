@@ -6,7 +6,7 @@ type NavItemsProps = {
 };
 
 const items = [
-  { label: "Accueil", to: "#accueil" },
+  { label: "Accueil", to: "/accueil" },
   { label: "Menu", to: "/menu" },
   { label: "Réserver", to: "#reservation" },
   { label: "À Propos", to: "#aPropos" },
