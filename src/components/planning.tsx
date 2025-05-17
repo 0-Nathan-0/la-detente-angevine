@@ -26,7 +26,7 @@ const Planning: React.FC = () => {
         <img
           src="exemple_evenements.png"
           alt="events"
-          className="w-1/3 rounded-lg shadow-md"
+          className="w-full md:max-w-sm max-w-xs rounded-lg shadow-md"
         ></img>
       </div>
       <h2 className="flex justify-center text-2xl font-bold mt-8">
