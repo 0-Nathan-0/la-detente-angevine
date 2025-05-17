@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         showBg ? "bg-black" : "bg-transparent"
       } animation duration-400`}
     >
-      <div className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold mt-1.5">
+      <div className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold mt-1.5 whitespace-nowrap">
         La Détente Angevine
       </div>
 
