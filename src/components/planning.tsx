@@ -8,12 +8,12 @@ import "swiper/css/navigation";
 import "swiper/css/effect-cards";
 
 const pastEvents = [
-  { src: "src/assets/exemple_evenements.png", title: "Janvier 2025" },
-  { src: "src/assets/exemple_evenements.png", title: "Février 2025" },
-  { src: "src/assets/exemple_evenements.png", title: "Mars 2025" },
-  { src: "src/assets/exemple_evenements.png", title: "Avril 2025" },
-  { src: "src/assets/exemple_evenements.png", title: "Mai 2025" },
-  { src: "src/assets/exemple_evenements.png", title: "Juin 2025" },
+  { src: "exemple_evenements.png", title: "Janvier 2025" },
+  { src: "exemple_evenements.png", title: "Février 2025" },
+  { src: "exemple_evenements.png", title: "Mars 2025" },
+  { src: "exemple_evenements.png", title: "Avril 2025" },
+  { src: "exemple_evenements.png", title: "Mai 2025" },
+  { src: "exemple_evenements.png", title: "Juin 2025" },
 ];
 
 const Planning: React.FC = () => {
@@ -24,7 +24,7 @@ const Planning: React.FC = () => {
       </h1>
       <div className="flex justify-center w-full mt-8 no-select">
         <img
-          src="src/assets/exemple_evenements.png"
+          src="exemple_evenements.png"
           alt="events"
           className="w-1/3 rounded-lg shadow-md"
         ></img>
