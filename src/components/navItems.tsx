@@ -31,7 +31,7 @@ const NavItems: React.FC<NavItemsProps> = ({ isMobile }) => {
   const rightItems = items.slice(2, 4);
 
   return (
-    <div className="hidden md:flex md:justify-between md:w-full">
+    <section className="hidden md:flex md:justify-between md:w-full">
       <ul className="flex space-x-6">
         {leftItems.map(({ label, to }) => (
           <li key={label}>
@@ -51,7 +51,7 @@ const NavItems: React.FC<NavItemsProps> = ({ isMobile }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

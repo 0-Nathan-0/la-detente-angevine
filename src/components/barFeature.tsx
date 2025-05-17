@@ -14,7 +14,7 @@ const BarFeature: React.FC<BarFeatureProps> = ({
   reverse,
 }) => {
   return (
-    <div
+    <section
       className={`flex flex-col items-center md:flex-row ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
@@ -31,7 +31,7 @@ const BarFeature: React.FC<BarFeatureProps> = ({
         <h2 className="text-3xl font-bold mb-4">{title}</h2>
         <p className="text-lg text-gray-700 mb-4">{text}</p>
       </div>
-    </div>
+    </section>
   );
 };
 

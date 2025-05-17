@@ -1,5 +1,13 @@
 import React from "react";
+import Masonry from "react-masonry-css";
 import CarteSection from "./carteSection";
+
+const breakpointColumnsObj = {
+  default: 2,
+  768: 1,
+};
+
+
 
 const entrees = [
   { name: "Salade César", price: "9,50€" },
@@ -49,13 +57,17 @@ const aPartager = [
 
 const Carte: React.FC = () => {
   return (
-    <div className="md:flex flex-wrap gap-3 py-3 items-start justify-between">
+    <section className="px-4 py-6">
+      <Masonry breakpointCols={breakpointColumnsObj}
+        className="flex gap-6"
+        columnClassName="flex flex-col gap-6">
       <CarteSection title="Entrées" items={entrees} />
       <CarteSection title="Plats" items={plats} />
       <CarteSection title="Desserts" items={desserts} />
       <CarteSection title="Boissons" items={boissons} />
       <CarteSection title="À Partager" items={aPartager} />
-    </div>
+      </Masonry>
+    </section>
   );
 };
 

@@ -18,12 +18,12 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div
+    <section
       className={`fixed text-white w-full flex justify-between px-6 py-4 z-10 ${
         showBg ? "bg-black" : "bg-transparent"
       } animation duration-400`}
     >
-      <div className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold whitespace-nowrap z-50">
+      <div className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold mt-1.5">
         La Détente Angevine
       </div>
 
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
       </button>
 
       {isMenuOpen && <NavItems isMobile={true} />}
-    </div>
+    </section>
   );
 };
 

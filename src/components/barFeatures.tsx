@@ -3,7 +3,7 @@ import BarFeature from "./barFeature";
 
 const BarFeatures: React.FC = () => {
   return (
-    <section className="flex flex-col py-16 px-6 gap-y-20">
+    <section className="flex flex-col py-16 px-6 gap-y-16">
       <BarFeature
         image="https://ehonline.eu/wp-content/uploads/2018/11/alcohol-bar-beer-min-scaled.jpg"
         title="lorem ipsum dolor sit amet"
